@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Site infos du PSG</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="site.js"></script>
+        <!-- Site créé par Timothé FABRE--FELIX, 16 ans, élève de 1èreG-->
+    </head>
+
+    <body>
+        <!-- J'introduis d'emblée un nouveau curseur dans chaque page. Grâce au JS, j'ai pu styliser
+        le pointeur de ma souris -->
+        <div class="curseur"></div> 
+        <div class="curseur-modif"></div>
+        <header> <!--Le haut de ma page principale contient une image, puis le titre du site-->
+            <p>
+                <img src="psglogo.png" alt="Logo actuel du psg"/>
+            </p>
+            <h1>PSG Fan club</h1>
+        </header>
+
+        <button class="menu">Menu</button> 
+        <!-- Je crée le bouton qui permettra d'afficher le sommaire "nav" et qu'on fait fonctionner
+        grâce au JS -->
+
+        <nav> <!--Toute cette partie correspond au "sommaire" du "main" qui est caché et dont on doit
+        déclencher l'affichage-->
+            <ol>
+                <li>
+                    <a href="#defpsg">Présentation du Paris SG</a>
+                </li>
+                <li>
+                    <a href="#effectif">Membres actuels du club</a>
+                </li>
+                <li>
+                    <a href="#legende">Les légendes du club</a>
+                </li>
+            </ol>
+        </nav>
+
+        <main> <!--Mon "main" contient mes 3 parties contenant des listes d'hyperliens-->
+            <div class="partie_page">
+                <h2 id="defpsg">Qu'est-ce que le PSG?</h2> <!--Chaque partie a un id pour le sommaire-->
+                    <ul>
+                        <li>
+                            <a href="histoirepsg.html">Brève histoire du psg</a>
+                        </li>
+                        <li>
+                            <a href="https://onefootball.com/fr/equipe/psg-263/matchs" 
+                            target="_blank">Matchs à venir</a>
+                        </li>
+                        <li>
+                            <a href="https://billetterie.psg.fr/fr/?utm_source=PSG_Site&utm_medium=referral&utm_campaign=Menu_Top_PSG"
+                            target="_blank">Assister aux matchs</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="partie_page">
+                <h2 id="effectif">Direction et effectif actuels</h2>
+                <!-- Tous les éléments des 2 listes suivantes sont des hyperliens internes. J'ai crée
+                chaque page en leur donnant un style semblable (cf: CSS) -->
+                    <ul> 
+                        <li>
+                            <a href="nak.html">Nasser Al-Khelaïfi</a>(PDG)
+                        </li>
+                        <li>
+                            <a href="lucho.html">Luis Enrique</a>(entraîneur)
+                        </li>
+                        <li>
+                            <a href="mbappe.html">Kylian Mbappé</a>(n°7)
+                        </li>
+                        <li>
+                            <a href="ugarte.html">Manuel Ugarte</a>(n°4)
+                        </li>
+                    </ul>
+            </div>
+            <div class="partie_page">
+                <h2 id="legende">Légendes du club</h2>
+                    <ul>
+                        <li>
+                            <a href="dimaria.html">Angel Di Maria</a>
+                        </li>
+                        <li>
+                            <a href="pauleta.html">Pedro Miguel Pauleta</a>
+                        </li>
+                        <li>
+                            <a href="zlatan.html">Zlatan Ibrahimovic</a>
+                        </li>
+                        <li>
+                            <a href="ginola.html">David Ginola</a>
+                        </li>
+                    </ul>
+            </div>
+            <!-- Les deux listes précédentes ne sont pas complètes. Je pourrais y ajouter des éléments
+            et donc créer des nouvelles pages concernant d'autres joueurs du PSG -->
+        </main>
+
+        <footer>
+            <h2>Sources:</h2>
+            <!-- J'identifie les sources des images que j'ai emprunté pour la création du site -->
+                <ul>
+                    <li>
+                        <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">Wikipedia</a>
+                    </li>
+                    <li>
+                        <a href="https://www.lequipe.fr/">L'équipe</a>
+                    </li>
+                </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,194 @@
+html{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(15, 15, 97), rgb(139, 5, 5), rgb(15, 15, 97));
+    cursor: none;
+    /* Je supprime mon curseur pour le 'remplacer' par un nouveau curseur stylisé */
+    scroll-behavior: smooth;
+}
+
+.curseur{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(245, 245, 245, 0.3);
+    pointer-events: none;
+    z-index: 10000;
+    transition: transform 0.3s, opacity 0.3s;
+    border: 2px black double;
+}
+
+.curseur-modif{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(241, 170, 4, 0.489);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    transition: 0.6s ease;
+    opacity: 0.7;
+    z-index: 1.1;
+}
+
+
+
+header{
+    text-align: center;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-style: italic;
+    font-family: 'emoji', serif;
+}
+
+
+.partie_page{
+    text-align: center;
+    background: rgba(255, 221, 221,0.2);
+    width: 60%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgba(255, 235, 205, 0.3);
+    width: 30%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5em;
+    margin-left: 32%;
+    margin-right: 32%;
+    padding: 3%;
+    border-radius: 10%;
+}
+
+h2{
+    color: whitesmoke;
+    font-style: italic;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(86, 22, 81);
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+ul{
+    list-style-position: inside; 
+    text-align: center;
+    line-height: 4em;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.bouton_accueil{
+    color:black;
+    background-color: rgba(255,235,205,0.5);
+    border-radius: 30% 70% 70% 30% / 30% 58% 42% 70%;
+    font-size: 1.8em;
+    position: absolute;
+    width: 20%;
+    bottom: 2%;
+    right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    /* Je modife les propriétés du bouton de retour à l'accueil, positionné en fin de chaque page 
+    de mon site (excepté l'accueil, soit 'pagePrincipale')*/
+}
+
+/* Les 3 éléments suivants sont utiles dans toutes les pages concernant une persone */
+.info-joueur{
+    padding-left: 30%;
+    align-items: start;
+    padding-top: 10%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(255, 235, 205, 0.5);
+    width: 60%;
+    padding: 5%;
+    right: 3%;
+    margin-top: 7%;
+    border-radius: 20%;
+}
+
+.profil-joueur{
+    float: left;
+    width: 30%;
+}
+/* (la photo du joueur se situe dans son profil) */
+.photo{
+    width: 80%;
+    height: auto; /* la hauteur de l'image s'adapte à sa largeur, qui elle-même s'adapte à la taille du
+    "bloc"d'éléments "profil-joueur" qui lui-même s'adapte à la taille de l'écran */
+    border-radius: 20%;
+    margin-right: 10px;
+}
+
+/* Je définis maintenant l'apparence de mon sommaire et du bouton qui permet de l'afficher */
+.menu{
+    margin-left: 20%;
+    background-color: blanchedalmond;
+    border: 2px rgb(94, 3, 3) double;
+    padding: 2%;
+    border-radius: 10% 30% 0% 30%;
+    transition: 0.8s ease-in-out;
+}
+
+
+/* Je change l'apparence du bouton menu lorsqu'on passe par dessus avec le curseur */
+.menu:hover{
+    background-color: rgb(94, 3, 3);
+    rotate: 20deg;
+}
+
+nav{
+    display: none; /* à l'état initial le sommaire n'est pas affiché, il faut déclencher son apparition (cf: JS) */
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 2%;
+    background-color: blanchedalmond;
+    border: 1px rgb(94, 3, 3) double;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.datepsg{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    background-color: rgba(245, 245, 245, 0.3);
+    width: 30%;
+    padding: 3%;
+    border-radius: 10%;
+}
+
+.palmares_club{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    padding: 3%;
+    border-radius: 10%;
+    background-color: rgba(245, 245, 245, 0.3);
+}
